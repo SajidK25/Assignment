@@ -12,8 +12,9 @@ namespace Assignment1
             sajid.Introduce();
 
             //calculator class
-            var cal = new Calculator();
-            var result=cal.add(1, 2);
+            //var cal = new Calculator();
+            // *** static implementation ***
+            var result = Calculator.add(1, 2);
             Console.WriteLine(result);
         }
     }
