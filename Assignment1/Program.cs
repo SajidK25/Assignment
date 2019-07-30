@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Assignment1.Math; 
 namespace Assignment1
 {
     class MainClass
@@ -10,6 +10,11 @@ namespace Assignment1
             sajid.FirstName = "Sajid";
             sajid.LastName = "khan";
             sajid.Introduce();
+
+            //calculator class
+            var cal = new Calculator();
+            var result=cal.add(1, 2);
+            Console.WriteLine(result);
         }
     }
 }
