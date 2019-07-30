@@ -6,7 +6,10 @@ namespace Assignment1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var sajid = new Person();
+            sajid.FirstName = "Sajid";
+            sajid.LastName = "khan";
+            sajid.Introduce();
         }
     }
 }
