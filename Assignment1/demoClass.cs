@@ -4,8 +4,32 @@ namespace Assignment1
 {
     public class Person
     {
-        public string FirstName;
-        public string LastName;
+        private  string firstName;
+        private string lastName;
+        public string FirstName {
+            get
+            {
+                return firstName.ToUpper();
+            }
+            set
+            {
+                firstName = value;
+            }
+            
+        }
+        public string LastName
+        {
+            get
+            {
+                return lastName.ToUpper();
+            }
+            set
+            {
+                lastName=value;
+            }
+        }
+
+
 
         public void Introduce()
         {
