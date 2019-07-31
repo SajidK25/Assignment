@@ -6,6 +6,7 @@ namespace Assignment1
     {
         public static void Main(string[] args)
         {
+
             var sajid = new Person();
             sajid.FirstName = "Sajid";
             sajid.LastName = "khan";
@@ -29,6 +30,24 @@ namespace Assignment1
             Console.WriteLine(flags[0]);
             Console.WriteLine(flags[1]);
             Console.WriteLine(flags[2]);
+
+            // *** String ***
+            var firstName = "sajid";
+            var lastName = "Khan";
+            var fullName = string.Format("My name is {0}{1}", firstName, lastName);
+            var names = new string[3] { "chand", "Sultana", "siddiqua"};
+            var combainedName = string.Join(" ", names);
+            Console.WriteLine(fullName);
+            Console.WriteLine("Spouse Name: {0}",combainedName);
+
+            var text = "Hi there!\nPlz follow this path\nC:\\folder1\\folder2";
+            Console.WriteLine(text);
+            var text2 = @"Hi there!
+                        Plz follow this path
+                        C:\folder2\folder3";
+            Console.WriteLine(text2);
+
+
 
         }
     }
