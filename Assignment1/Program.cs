@@ -16,6 +16,14 @@ namespace Assignment1
 			customer.Orders.Add(order);
 			Console.WriteLine(customer.Id);
 			Console.WriteLine(customer.Name );
+			// Object Initializer syntex
+			var anotherCustmer = new Customer() {
+				Id = 2,
+				Name = "Sajid"
+
+			};
+			var name = anotherCustmer.Name;
+			Console.WriteLine(name);
 
         }
     }
