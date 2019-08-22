@@ -1,14 +1,19 @@
 ﻿using System;
-using Assignment1.Math;
-using System.Collections.Generic;
 namespace Assignment1
 {
-
 	class MainClass
     {
         public static void Main(string[] args)
         {
-			
+
+			var customer = new Customer(1);
+			customer.Orders.Add(new Order());
+			customer.Orders.Add(new Order());
+			customer.Orders.Add(new Order());
+			customer.Orders.Add(new Order());
+
+			customer.Promote();
+			Console.WriteLine(customer.Orders.Count);
 
 		}
 	}
